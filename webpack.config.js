@@ -1,3 +1,4 @@
+const Dotenv = require('dotenv-webpack')
 module.exports = {
     
   entry: ["./src/index.js"],
@@ -10,6 +11,10 @@ module.exports = {
   context: __dirname,
 
   devtool: "source-map",
+
+  plugins: [ new Dotenv({
+    path: '.env', // or '.env.local', '.env.[mode]', etc.
+    }) ],
 
   module: {
     rules: [

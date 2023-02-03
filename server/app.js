@@ -2,6 +2,10 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+  }
+
 module.exports = app;
 
 // middleware
