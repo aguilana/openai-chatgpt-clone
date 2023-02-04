@@ -75,19 +75,19 @@
 }
 
 .avatar {
-  background: white;
+  background: #0da37f;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  padding: 24px;
+  /* padding: 24px; */
 }
 
 .avatar.chatgpt {
-    background: #55807a;
+    background: #0da37f;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    padding: 24px;
+    /* padding: 24px; */
   }
 
 .message {
